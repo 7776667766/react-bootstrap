@@ -1,0 +1,43 @@
+/* Header.css */
+.carousel-text-container {
+  display: flex;
+  flex-direction: column;
+  padding-left: 20px; /* Initial left padding */
+  @media (min-width: 600px) {
+    padding-left: 7%; /* Adjust to your preference */
+  }
+}
+
+.responsive-text-content {
+  font-size: 1rem;
+  @media (min-width: 768px) {
+    font-size: 3rem;
+  }
+  @media (min-width: 1024px) {
+    font-size: 3rem;
+  }
+}
+
+.responsive-text-description {
+  font-size: 12px;
+  @media (min-width: 768px) {
+    font-size: 20px;
+  }
+  @media (min-width: 1024px) {
+    font-size: 1.2rem;
+  }
+ 
+
+}
+@media (max-width: 305px) {
+  .carousel-text-container {
+    padding-left: 10px; /* Maintain consistent left padding */
+  }
+}
+
+
+
+
+
+
+

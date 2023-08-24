@@ -1,0 +1,54 @@
+/* Add this CSS to your stylesheet */
+.nav-link {
+    position: relative;
+  }
+  
+  .nav-link::after {
+    content: '';
+    position: absolute;
+    bottom: -2px; /* Adjust this value to control the distance of the line from the text */
+    left: 0;
+    width: calc(100% - 8px); /* Adjust padding as needed */
+    height: 2px;
+    background-color: white;
+    opacity: 0; /* You can make it fully visible by setting opacity to 1 */
+    transition: opacity 0.3s ease;
+  }
+  /* hero.css */
+
+.bg-cover-responsive {
+    background-size:100% 100vh;
+    background-position: center center;
+  }
+  
+  /* Add a media query for small screens */
+  @media (max-width: 767px) {
+    .bg-cover-responsive {
+        position: relative;
+        
+        background-repeat:no-repeat;
+        background-size:100% 100vh;
+
+
+    }
+  }
+  
+  
+  .nav-link:hover::after {
+    opacity: 1;
+  }
+  /* hero.css */
+
+/* Add a media query for small screens */
+@media (max-width: 767px) {
+    .flex.items-center {
+      flex-direction: column; /* Stack items vertically */
+      align-items: center; /* Center items horizontally */
+    }
+  
+    .nav-link {
+      margin-bottom: 10px; /* Add some spacing between links */
+    }
+  }
+  
+  
